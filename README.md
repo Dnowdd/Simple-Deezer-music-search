@@ -27,5 +27,7 @@ Now, in App.js you need add your [RapidAPI](rapidapi.com) key.
     
     const  rapidApiKey  =  '';
 
-![Image One](https://github.com/Dnowdd/Simple-Deezer-music-search/blob/src/prints/deezer1.png?raw=true)
-![Image Two](https://github.com/Dnowdd/Simple-Deezer-music-search/blob/src/prints/deezer2.png?raw=true)
+<br><br><br><br>
+
+![Image One](https://github.com/Dnowdd/Simple-Deezer-music-search/blob/02ff2552ea65f7ac706e522fadd3266e736a665c/src/prints/deezer1.png?raw=true)
+![Image Two](https://github.com/Dnowdd/Simple-Deezer-music-search/blob/02ff2552ea65f7ac706e522fadd3266e736a665c/src/prints/deezer2.png?raw=true)
