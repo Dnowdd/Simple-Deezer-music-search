@@ -1,38 +1,82 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body, html, *{
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body{
+  padding-bottom: 250px;
+}
+
+.form{
+  margin: 25px auto;
+  display: grid;
+  justify-content: center;
+}
+.form > label{
+  font-weight: 900;
+  font-size: 24px;
+  text-align: center;
+}
+.form > input{
+  margin-top: 20px;
+  padding: 8px 16px;
+  min-width: 500px;
+
+  outline: none;
+  border: thin solid black;
+  border-radius: 3px;
+
+  font-weight: 300;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.musics{
+  display: grid;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
+.music{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
 
-.App-link {
-  color: #61dafb;
+  width: 500px;
+  max-height: 100px;
+  position: relative;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.music + .music{
+  margin-top: 25px;
+}
+.music img{
+  width: 100px;
+  height: 100px;
+}
+.music h1{
+  color: rgb(30, 30, 30);
+  font-weight: 800;
+  font-size: 20px;
+  width: 375px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.music h2{
+  color: rgb(115, 115, 115);
+  font-weight: 500;
+  font-size: 14px;
+  width: 375px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.music a{
+  position: absolute;
+  right: 5px;
+  bottom: 0;
+  color: rgb(0, 140, 255);
+  transition: .3s;
+}
+.music a:hover{
+  color: rgb(0, 13, 255);
 }
